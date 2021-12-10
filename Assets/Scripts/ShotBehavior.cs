@@ -12,7 +12,7 @@ public class ShotBehavior : MonoBehaviour {
 
 		if (transform.position == m_targetPos)
 		{
-			if (target.GetComponent<EnemyController>() != null)
+			if (target !=null && target.GetComponent<EnemyController>() != null)
 			{
 				Debug.Log(target.name);
 				target.GetComponent<EnemyController>().ChangeHealth(-1);
