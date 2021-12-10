@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MapIconsRotationController : MonoBehaviour
 {
-	public Transform plTrns;
+	[SerializeField] private Transform plTrns;
 
     // Update is called once per frame
     void Update()

@@ -5,8 +5,8 @@ public class GunController : MonoBehaviour
 	public float shootRate;
 	private float m_shootRateTime;
 
-	public GameObject plGm;
-	public GameObject m_shotPrefab;
+	[SerializeField] private GameObject plGm;
+	[SerializeField] private GameObject m_shotPrefab;
 
 	private float range = 10000.0f;
 

@@ -5,7 +5,7 @@ public class ShotBehavior : MonoBehaviour {
 	private Vector3 m_targetPos;
 	private GameObject target;
 
-	public GameObject explosionPrefab;
+	[SerializeField] private GameObject explosionPrefab;
 
 	// Update is called once per frame
 	void Update () {
@@ -17,6 +17,7 @@ public class ShotBehavior : MonoBehaviour {
 				Debug.Log(target.name);
 				target.GetComponent<EnemyController>().ChangeHealth(-1);
 			}
+			else Destroy(gameObject);
 			explode();
 			return;
 		}

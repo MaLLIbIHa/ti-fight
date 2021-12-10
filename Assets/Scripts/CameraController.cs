@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-	public Transform target;
+	[SerializeField] private Transform target;
 	public float distance;
 	public float heightOffset;
 

@@ -4,13 +4,13 @@ using TMPro;
 
 public class UIController : MonoBehaviour
 {
-	public TextMeshProUGUI speedText;
-	public TextMeshProUGUI healthText;
-	public TextMeshProUGUI flaresText;
-	public PlayerController plCntrl;
-	public RectTransform crosshair;
-	public RectTransform minimap;
-	public RectTransform minimapMask;
+	[SerializeField] private TextMeshProUGUI speedText;
+	[SerializeField] private TextMeshProUGUI healthText;
+	[SerializeField] private TextMeshProUGUI flaresText;
+	[SerializeField] private PlayerController plCntrl;
+	[SerializeField] private RectTransform crosshair;
+	[SerializeField] private RectTransform minimap;
+	[SerializeField] private RectTransform minimapMask;
 
 	private Image crossAlpha;
 	private RawImage minimapAlpha;

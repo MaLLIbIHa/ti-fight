@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+	[SerializeField] private GameObject flares;
+	[SerializeField] private ParticleSystem[] thrustPrt;
+	[SerializeField] private GameObject explodeOnDeath;
+	[SerializeField] private Camera cam;
+
 	private Rigidbody playerRb;
-	public GameObject flares; 
-	public ParticleSystem[] thrustPrt;
-	public GameObject explodeOnDeath;
-	public Camera cam;
 
 	internal int health;
 	private int maxHealth = 5;
